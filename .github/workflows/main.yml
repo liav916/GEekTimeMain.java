@@ -1,4 +1,4 @@
-name: GEekTimeMain
+name: GeekTimeMain
 on: 
  schedule:
  - cron: '*/5 * * * *' 
