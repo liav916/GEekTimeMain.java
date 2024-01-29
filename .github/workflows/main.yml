@@ -1,5 +1,5 @@
 name: GeekTimeMain
-on:
+'on':
   schedule:
     - cron: '*/5 * * * *'
 jobs:
@@ -11,7 +11,6 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
-          java-version: '11' # Define the Java version you need
-          distribution: 'adopt' 
+          java-version: '11'
       - name: Run Selenium Script
-        run: java -jar out/artifacts/untitled22_jar/seleniumScript.jar
+        run: java -jar out/artifacts/untitled22_jar/untitled22.jar
