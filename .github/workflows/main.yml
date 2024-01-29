@@ -14,4 +14,4 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Run Selenium Script
-        run: java -jar GeekTimeMain.java/.idea/artifacts/seleniumScript.jar
+        run: java -jar seleniumScript.jar
