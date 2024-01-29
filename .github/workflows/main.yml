@@ -12,5 +12,6 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '11' # Define the Java version you need
+          distribution: 'adopt' 
       - name: Run Selenium Script
-        run: java -jar out/artifacts/untitled22_jar/untitled22.jar
+        run: java -jar out/artifacts/untitled22_jar/seleniumScript.jar
