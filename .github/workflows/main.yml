@@ -13,4 +13,4 @@ jobs:
         with:
           java-version: '11' # Define the Java version you need
       - name: Run Selenium Script
-        run: java -jar out/artifacts/untitled22_jar/untitled22.jar
+        run: java -jar GeekTimeMain.java/seleniumScript.jar
