@@ -1,16 +1,16 @@
 name: GeekTimeMain
-on: 
- schedule:
- - cron: '*/5 * * * *' 
+on:
+  schedule:
+    - cron: '*/5 * * * *'
 jobs:
- run_selenium_script: 
- runs-on: ubuntu-latest 
-steps:
- - name: Checkout Repository 
-   uses: actions/checkout@v2 
- - name: Set up JDK
-   uses: actions/setup-java@v2 
-   with:
-        java-version: '11' # Define the Java version you need
- - name: Run Selenium Script 
-run: java -jar out/artifacts/untitled22_jar/untitled22.jar
+  run_selenium_script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11' # Define the Java version you need
+      - name: Run Selenium Script
+        run: java -jar out/artifacts/untitled22_jar/untitled22.jar
