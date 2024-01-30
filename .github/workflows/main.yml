@@ -15,3 +15,4 @@ jobs:
           distribution: "adopt"
       - name: Run Selenium Script
         run: java -jar seleniumScript.jar
+        working-directory: ./.idea/artifacts
