@@ -3,7 +3,7 @@ on:
   schedule:
     - cron: '*/5 * * * *'
 jobs:
-  - name: Run Selenium Script
+  run_selenium_script:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -14,4 +14,4 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Run Selenium Script
-        run: java -jar GeekTimeMain.java/.idea/artifacts/seleniumScript.jar  
+        run: java -jar GeekTimeMain.java/.idea/artifacts/seleniumScript.jar 
