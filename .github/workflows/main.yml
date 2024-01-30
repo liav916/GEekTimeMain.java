@@ -14,7 +14,6 @@ jobs:
           java-version: "11"
           distribution: "adopt"
       - name: Build and Generate JAR
-         run:
       - name: Run Selenium Script
         run: java -jar seleniumScript.jar
         working-directory: ./.idea/artifacts
